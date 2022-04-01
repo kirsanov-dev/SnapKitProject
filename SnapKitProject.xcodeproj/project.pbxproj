@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0427994C3523B920D472041B /* Pods_SnapKitProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04064695549CED7E19471CA7 /* Pods_SnapKitProject.framework */; };
 		0B42961B27F780000027EFFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42961A27F780000027EFFF /* AppDelegate.swift */; };
 		0B42961D27F780000027EFFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42961C27F780000027EFFF /* SceneDelegate.swift */; };
 		0B42961F27F780000027EFFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42961E27F780000027EFFF /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04064695549CED7E19471CA7 /* Pods_SnapKitProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapKitProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B42961727F780000027EFFF /* SnapKitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapKitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B42961A27F780000027EFFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B42961C27F780000027EFFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		0B42962327F780000027EFFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B42962627F780000027EFFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B42962827F780000027EFFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10873E2478C31B87B685D78D /* Pods-SnapKitProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKitProject.debug.xcconfig"; path = "Target Support Files/Pods-SnapKitProject/Pods-SnapKitProject.debug.xcconfig"; sourceTree = "<group>"; };
+		68837ACA5AB55A660367578A /* Pods-SnapKitProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKitProject.release.xcconfig"; path = "Target Support Files/Pods-SnapKitProject/Pods-SnapKitProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0427994C3523B920D472041B /* Pods_SnapKitProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0B42961927F780000027EFFF /* SnapKitProject */,
 				0B42961827F780000027EFFF /* Products */,
+				D6D707913282019E85A2FDEB /* Pods */,
+				B489801748140FB9CFAFE174 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = SnapKitProject;
 			sourceTree = "<group>";
 		};
+		B489801748140FB9CFAFE174 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04064695549CED7E19471CA7 /* Pods_SnapKitProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6D707913282019E85A2FDEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10873E2478C31B87B685D78D /* Pods-SnapKitProject.debug.xcconfig */,
+				68837ACA5AB55A660367578A /* Pods-SnapKitProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B42962B27F780000027EFFF /* Build configuration list for PBXNativeTarget "SnapKitProject" */;
 			buildPhases = (
+				AD347745B4A5E8999CB1CA48 /* [CP] Check Pods Manifest.lock */,
 				0B42961327F780000027EFFF /* Sources */,
 				0B42961427F780000027EFFF /* Frameworks */,
 				0B42961527F780000027EFFF /* Resources */,
+				92486C2DC5633A73FB78E947 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92486C2DC5633A73FB78E947 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapKitProject/Pods-SnapKitProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapKitProject/Pods-SnapKitProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnapKitProject/Pods-SnapKitProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD347745B4A5E8999CB1CA48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnapKitProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B42961327F780000027EFFF /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		0B42962C27F780000027EFFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10873E2478C31B87B685D78D /* Pods-SnapKitProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		0B42962D27F780000027EFFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68837ACA5AB55A660367578A /* Pods-SnapKitProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
