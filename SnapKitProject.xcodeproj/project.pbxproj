@@ -10,9 +10,11 @@
 		0427994C3523B920D472041B /* Pods_SnapKitProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04064695549CED7E19471CA7 /* Pods_SnapKitProject.framework */; };
 		0B42961B27F780000027EFFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42961A27F780000027EFFF /* AppDelegate.swift */; };
 		0B42961D27F780000027EFFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42961C27F780000027EFFF /* SceneDelegate.swift */; };
-		0B42961F27F780000027EFFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42961E27F780000027EFFF /* ViewController.swift */; };
+		0B42961F27F780000027EFFF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42961E27F780000027EFFF /* HomeViewController.swift */; };
 		0B42962427F780000027EFFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B42962327F780000027EFFF /* Assets.xcassets */; };
 		0B42962727F780000027EFFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B42962527F780000027EFFF /* LaunchScreen.storyboard */; };
+		0B42962F27F7844A0027EFFF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42962E27F7844A0027EFFF /* HomeViewModel.swift */; };
+		0B953D6E27F7966000B8807E /* CarouselCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B953D6D27F7966000B8807E /* CarouselCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		0B42961727F780000027EFFF /* SnapKitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapKitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B42961A27F780000027EFFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B42961C27F780000027EFFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0B42961E27F780000027EFFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B42961E27F780000027EFFF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0B42962327F780000027EFFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B42962627F780000027EFFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B42962827F780000027EFFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B42962E27F7844A0027EFFF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0B953D6D27F7966000B8807E /* CarouselCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionCell.swift; sourceTree = "<group>"; };
 		10873E2478C31B87B685D78D /* Pods-SnapKitProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKitProject.debug.xcconfig"; path = "Target Support Files/Pods-SnapKitProject/Pods-SnapKitProject.debug.xcconfig"; sourceTree = "<group>"; };
 		68837ACA5AB55A660367578A /* Pods-SnapKitProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKitProject.release.xcconfig"; path = "Target Support Files/Pods-SnapKitProject/Pods-SnapKitProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +67,9 @@
 			children = (
 				0B42961A27F780000027EFFF /* AppDelegate.swift */,
 				0B42961C27F780000027EFFF /* SceneDelegate.swift */,
-				0B42961E27F780000027EFFF /* ViewController.swift */,
+				0B42962E27F7844A0027EFFF /* HomeViewModel.swift */,
+				0B42961E27F780000027EFFF /* HomeViewController.swift */,
+				0B953D6D27F7966000B8807E /* CarouselCollectionCell.swift */,
 				0B42962327F780000027EFFF /* Assets.xcassets */,
 				0B42962527F780000027EFFF /* LaunchScreen.storyboard */,
 				0B42962827F780000027EFFF /* Info.plist */,
@@ -202,9 +208,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B42961F27F780000027EFFF /* ViewController.swift in Sources */,
+				0B42961F27F780000027EFFF /* HomeViewController.swift in Sources */,
+				0B953D6E27F7966000B8807E /* CarouselCollectionCell.swift in Sources */,
 				0B42961B27F780000027EFFF /* AppDelegate.swift in Sources */,
 				0B42961D27F780000027EFFF /* SceneDelegate.swift in Sources */,
+				0B42962F27F7844A0027EFFF /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
