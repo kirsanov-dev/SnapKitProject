@@ -33,13 +33,13 @@ class HomeViewController: UIViewController {
         collectionView.register(CarouselCollectionCell.self, forCellWithReuseIdentifier: CarouselCollectionCell.identifier)
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .systemBackground
         return collectionView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .systemBackground
         collectionView.reloadData()
     }
 
@@ -52,7 +52,8 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarouselCollectionCell.identifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarouselCollectionCell.identifier, for: indexPath) as! CarouselCollectionCell
+        cell.cellModel = viewModel.modelFor(row: indexPath.row)
         return cell
     }
     
