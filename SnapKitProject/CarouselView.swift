@@ -54,7 +54,7 @@ class CarouselView: UIView {
     
     private lazy var imageViews = [imageViewOne, imageViewTwo, imageViewThree]
     
-    var model: Model? {
+    var model: CarouselModel? {
         didSet {
             if let model = model {
                 setupView(with: model)
@@ -70,7 +70,7 @@ class CarouselView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupView(with model: Model) {
+    private func setupView(with model: CarouselModel) {
         for (index, view) in imageViews.enumerated() {
             let hasAnotherImage = model.images.count > index
             if hasAnotherImage {
@@ -79,7 +79,7 @@ class CarouselView: UIView {
         }
     }
     
-    struct Model {
+    struct CarouselModel {
         var images: [UIImage]
     }
 }
